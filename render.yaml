@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pii-detection-api
+    env: python
+    buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
+    startCommand: cd backend && python main.py
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHON_VERSION
+        value: 3.11
+    healthCheckPath: /health
