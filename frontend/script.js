@@ -1,5 +1,5 @@
 // Configuration
-const API_BASE = ''; // No backend - using demo mode
+const API_BASE = '/.netlify/functions'; // Netlify Functions
 // For local development: const API_BASE = 'http://localhost:8000';
 // For production: const API_BASE = 'https://your-api.onrender.com';
 
@@ -58,17 +58,6 @@ function showPage(page) {
 
 // API Health Check
 async function checkApiHealth() {
-    if (!API_BASE) {
-        // Demo mode - no API needed
-        const apiStatus = document.getElementById('apiStatus');
-        apiStatus.innerHTML = `
-            <div class="w-2 h-2 rounded-full mr-2 bg-blue-500"></div>
-            Demo Mode
-        `;
-        apiStatus.className = 'flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-800';
-        return;
-    }
-    
     try {
         const response = await axios.get(`${API_BASE}/health`);
         const data = response.data;
@@ -102,7 +91,7 @@ async function checkApiHealth() {
         apiStatus.className = 'flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800';
         
         // Show demo mode message
-        console.log('Running in demo mode - all features available offline');
+        showError('API is offline. Using demo mode with sample data.');
     }
 }
 
