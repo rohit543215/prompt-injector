@@ -1,7 +1,11 @@
 [build]
   publish = "frontend"
-  command = "echo 'No build needed - static files only'"
-  
+  command = "echo 'Static site - no build required'"
+  ignore = "exit 0"
+
+[build.environment]
+  NODE_VERSION = "18"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
