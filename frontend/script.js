@@ -1,5 +1,5 @@
 // Configuration
-const API_BASE = 'https://pii-detection-api.onrender.com'; // Replace with your actual Render URL
+const API_BASE = window.location.origin + '/api'; // Use same domain with /api prefix
 // For local development: const API_BASE = 'http://localhost:8001';
 // For Netlify Functions: const API_BASE = '/.netlify/functions';
 

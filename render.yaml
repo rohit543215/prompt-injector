@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: pii-detection-api
+    name: pii-detection-system
     env: python
     buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
-    startCommand: cd backend && python main.py
+    startCommand: python main.py
     envVars:
       - key: PORT
         value: 8000
