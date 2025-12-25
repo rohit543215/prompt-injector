@@ -1,0 +1,8 @@
+{
+  "name": "pii-frontend",
+  "version": "1.0.0",
+  "description": "Static frontend for PII detection system",
+  "scripts": {
+    "build": "echo 'No build needed'"
+  }
+}
