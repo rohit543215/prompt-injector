@@ -1,7 +1,7 @@
 // Configuration
-const API_BASE = 'http://localhost:8001'; // Local development
+const API_BASE = 'https://prompt-injector-2.onrender.com'; // Live API on Render
+// For local development: const API_BASE = 'http://localhost:8001';
 // For Netlify Functions: const API_BASE = '/.netlify/functions';
-// For production: const API_BASE = 'https://your-api.onrender.com';
 
 // Global state
 let currentAnalysis = null;
