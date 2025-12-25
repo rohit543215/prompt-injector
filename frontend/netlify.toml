@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  publish = "pii_system/frontend"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- pii_system/frontend"
   
 [[redirects]]
   from = "/*"
