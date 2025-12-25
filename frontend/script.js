@@ -1,6 +1,6 @@
 // Configuration
-const API_BASE = '/.netlify/functions'; // Netlify Functions
-// For local development: const API_BASE = 'http://localhost:8000';
+const API_BASE = 'http://localhost:8001'; // Local development
+// For Netlify Functions: const API_BASE = '/.netlify/functions';
 // For production: const API_BASE = 'https://your-api.onrender.com';
 
 // Global state
