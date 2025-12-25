@@ -58,6 +58,17 @@ cd frontend && npm run dev
 - **Prompt Protector**: http://localhost:3000/protect
 - **API Documentation**: http://localhost:8000/docs
 
+### 4. Deploy to Netlify (Frontend Only)
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Deploy to Netlify (drag & drop or connect GitHub)
+# Files needed: index.html, script.js, netlify.toml, _redirects
+```
+
+**Live Demo**: The frontend can run in demo mode without the backend API.
+
 ## 📊 Example Usage
 
 ### Input Text:
