@@ -1,6 +1,6 @@
 # 🛡️ PII Detection & Masking System
 
-A comprehensive **Neural Network-based** system for detecting and masking Personally Identifiable Information (PII) in text, with an innovative **Prompt Protector** feature that generates privacy-safe versions of prompts while maintaining their intent.
+comprehensive **Neural Network-based** system for detecting and masking Personally Identifiable Information (PII) in text, with an innovative **Prompt Protector** feature that generates privacy-safe versions of prompts while maintaining their intent.
 
 ![System Demo](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
